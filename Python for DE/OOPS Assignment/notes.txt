@@ -1,0 +1,15 @@
+explain self to me in python
+what is namespace
+what is accessor and mutator methods
+what is @classmethod and @staticmethod
+explain the concept of class inside class
+types of inheritance
+- single level 
+- multi level
+- multiple
+what is super() 
+what is method resolution order
+what is duck typing in python
+operator overloading
+method overloading is not there in python but still how to achieve it in python
+method overriding

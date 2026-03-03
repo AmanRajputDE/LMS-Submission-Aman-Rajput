@@ -1,0 +1,251 @@
+
+BULK INSERT dbo.weekly_sales
+FROM 'C:\Users\aman.rajput\Downloads\data_mart.csv'
+WITH (
+    FIRSTROW = 2,
+    FIELDTERMINATOR = ',',
+    ROWTERMINATOR = '0x0A',   -- handles \n correctly, works for most CSVs
+    KEEPNULLS,
+    FORMAT = 'CSV'
+);
+
+select * from weekly_sales;
+select * from weekly_salesss;
+
+drop table weekly_salesss;
+
+-- 1. Data Cleansing Steps
+
+select try_convert(DATE,week_date,3) as week_date
+,DATEPART(week,try_convert(DATE,week_date,3)) as week_number
+,DATEPART(month,try_convert(DATE,week_date,3)) as month_number
+,DATEPART(year,try_convert(DATE,week_date,3)) as calendar_year
+,CASE
+    when RIGHT(segment,1) = '1' then 'Young Adults'
+    when RIGHT(segment,1) = '1' then 'Middle Aged'
+    when RIGHT(segment,1) in ('3','4') then 'Retirees'
+    else 'unknown'
+END as age_band 
+,CASE 
+    when LEFT(segment,1) = 'C' then 'Couples'
+    when LEFT(segment,1) = 'F' then 'Families'
+    else 'unknown'
+END as demographic
+,ROUND((CAST(sales as decimal)/transactions),2) as avg_transaction ,region,platform,segment,customer_type,transactions,sales
+into weekly_salesss
+from weekly_sales;
+
+-- 2. Data Exploration
+
+--1. What day of the week is used for each week_date value?
+
+select DISTINCT DATENAME(WEEKDAY,week_date) as DayName
+FROM weekly_salesss;
+
+--2. What range of week numbers are missing from the dataset?
+
+select * from generate_series(1,52)
+EXCEPT
+select distinct DATEPART(week,week_date) as value from weekly_salesss;
+
+--3. How many total transactions were there for each year in the dataset?
+
+select calendar_year,SUM(CAST(transactions as bigint)) as total_transactions 
+from weekly_salesss
+group by calendar_year;
+
+--4. What is the total sales for each region for each month?
+
+select month_number,region,sum(CAST(sales as bigint)) as total_sales
+from weekly_salesss
+group by month_number,region
+order by month_number,region;
+
+
+--5. What is the total count of transactions for each platform
+
+select platform,sum(CAST(transactions as bigint)) as total_transactions 
+from weekly_salesss
+group by platform;
+
+
+
+
+--6. What is the percentage of sales for Retail vs Shopify for each month?
+
+with sales_monthly as (
+    select month_number,sum(CAST(sales as bigint)) as total_sales_monthly
+    from weekly_salesss
+    group by month_number
+)
+,sales_monthly_platform as (
+    select month_number,platform,sum(CAST(sales as bigint)) as sales_month_platform
+    from weekly_salesss
+    group by month_number,platform
+)
+select *,100 * ROUND(CAST(sales_month_platform as decimal)/total_sales_monthly,4)
+from sales_monthly_platform smp
+left join sales_monthly sm 
+on smp.month_number = sm.month_number
+order by smp.month_number;
+
+
+--7. What is the percentage of sales by demographic for each year in the dataset?
+
+with sales_year as (
+    select calendar_year, sum(CAST(sales as bigint)) as sales_by_year
+    from weekly_salesss
+    group by calendar_year
+)
+,sales_year_demo as (
+    select calendar_year,demographic, sum(CAST(sales as bigint)) as sales_by_year_demographic
+    from weekly_salesss
+    group by calendar_year,demographic
+)
+select *,ROUND(100 * CAST(sales_by_year_demographic as decimal)/sales_by_year,2) as percentage_of_sales
+from sales_year_demo syd
+left join sales_year sy
+on syd.calendar_year = sy.calendar_year
+order by syd.calendar_year;
+
+
+--8. Which age_band and demographic values contribute the most to Retail sales?
+
+with percent_sales as (
+    select age_band, demographic,SUM(CAST(sales as bigint)) as total_sales_ageBand_and_demographic_wise,
+        ( 100*SUM(CAST(sales as decimal))/SUM(SUM(CAST(sales as bigint))) OVER() ) as percentage_of_sales
+    from weekly_salesss
+    where platform = 'Retail'
+    group by age_band, demographic
+)
+select *
+from percent_sales
+order by percentage_of_sales DESC;
+
+--9. Can we use the avg_transaction column to find the average transaction 
+-- size for each year for Retail vs Shopify? If not - how would you calculate it instead?
+
+select calendar_year,platform,ROUND(SUM(CAST(sales as decimal))/SUM(CAST(transactions as decimal)),0) as average_sales
+from weekly_salesss
+group by calendar_year,platform
+order by calendar_year,platform;
+
+
+-- Before & After Analysis
+
+
+--1. What is the total sales for the 4 weeks before and after 2020-06-15? What is the growth or reduction rate in actual values and percentage of sales?
+
+select *
+from weekly_salesss
+where  week_date = '2020-06-15';
+
+-- The week on the date 2020-06-15 was 25 writing this comment just for future reference :D
+
+select *
+from weekly_salesss
+where week_date between DATEADD(WEEK,-4,'2020-06-15') and DATEADD(DAY,-1,'2020-06-15')
+order by week_date DESC;
+
+select *
+from weekly_salesss
+where week_date between '2020-06-15' and DATEADD(WEEK,3,'2020-06-15')
+order by week_date DESC;
+
+with sales_breakup as (
+    select 
+    SUM(
+        CASE 
+            when week_date between DATEADD(WEEK,-4,'2020-06-15') and DATEADD(DAY,-1,'2020-06-15') then CAST(sales as bigint)
+            else 0 
+        END
+       ) as total_sales_4_weeks_before_sustainable_packaging,
+    SUM(
+        CASE 
+            when week_date between '2020-06-15' and DATEADD(WEEK,3,'2020-06-15') then CAST(sales as bigint)
+            else 0 
+        END
+       ) as total_sales_4_weeks_after_sustainable_packaging
+    from weekly_salesss
+)
+select (total_sales_4_weeks_after_sustainable_packaging - total_sales_4_weeks_before_sustainable_packaging) as actual_sales_difference,
+    100*(CAST(total_sales_4_weeks_after_sustainable_packaging as decimal) - total_sales_4_weeks_before_sustainable_packaging)/total_sales_4_weeks_before_sustainable_packaging 
+        as percentage_change
+from sales_breakup;
+
+--2. What about the entire 12 weeks before and after?
+
+with sales_breakup as (
+    select 
+    SUM(
+        CASE 
+            when week_date between DATEADD(WEEK,-12,'2020-06-15') and DATEADD(DAY,-1,'2020-06-15') then CAST(sales as bigint)
+            else 0 
+        END
+       ) as total_sales_12_weeks_before_sustainable_packaging,
+    SUM(
+        CASE 
+            when week_date between '2020-06-15' and DATEADD(WEEK,11,'2020-06-15') then CAST(sales as bigint)
+            else 0 
+        END
+       ) as total_sales_12_weeks_after_sustainable_packaging
+    from weekly_salesss
+)
+select (total_sales_12_weeks_after_sustainable_packaging - total_sales_12_weeks_before_sustainable_packaging) as actual_sales_difference,
+    100*(CAST(total_sales_12_weeks_after_sustainable_packaging as decimal) - total_sales_12_weeks_before_sustainable_packaging)/total_sales_12_weeks_before_sustainable_packaging 
+        as percentage_change
+from sales_breakup;
+
+--3. How do the sale metrics for these 2 periods before and after compare with the previous years in 2018 and 2019?
+
+with sales_breakup as (
+    select 
+    SUM(
+        CASE 
+            when week_date between DATEADD(WEEK,-12,'2018-06-15') and DATEADD(DAY,-1,'2018-06-15') then CAST(sales as bigint)
+            else 0 
+        END
+       ) as total_sales_12_weeks_before_sustainable_packaging,
+    SUM(
+        CASE 
+            when week_date between '2018-06-15' and DATEADD(WEEK,11,'2018-06-15') then CAST(sales as bigint)
+            else 0 
+        END
+       ) as total_sales_12_weeks_after_sustainable_packaging
+    from weekly_salesss
+)
+select (total_sales_12_weeks_after_sustainable_packaging - total_sales_12_weeks_before_sustainable_packaging) as actual_sales_difference,
+    100*(CAST(total_sales_12_weeks_after_sustainable_packaging as decimal) - total_sales_12_weeks_before_sustainable_packaging)/total_sales_12_weeks_before_sustainable_packaging 
+        as percentage_change
+from sales_breakup;
+
+
+--Bonus Question
+
+
+ select * from weekly_salesss;
+
+ with sales_breakup as (
+    select customer_type,
+    SUM(
+        CASE 
+            when week_date between DATEADD(WEEK,-12,'2018-06-15') and DATEADD(DAY,-1,'2018-06-15') then CAST(sales as bigint)
+            else 0 
+        END
+       ) as total_sales_12_weeks_before_sustainable_packaging,
+    SUM(
+        CASE 
+            when week_date between '2018-06-15' and DATEADD(WEEK,11,'2018-06-15') then CAST(sales as bigint)
+            else 0 
+        END
+       ) as total_sales_12_weeks_after_sustainable_packaging
+    from weekly_salesss
+    group by customer_type    
+)
+, percentage_chg as (
+    select *,(total_sales_12_weeks_after_sustainable_packaging - total_sales_12_weeks_before_sustainable_packaging) as actual_sales_difference,
+        100*(CAST(total_sales_12_weeks_after_sustainable_packaging as decimal) - total_sales_12_weeks_before_sustainable_packaging)/total_sales_12_weeks_before_sustainable_packaging 
+            as percentage_change
+    from sales_breakup
+)
+select AVG(percentage_change) as AVG_percentage_change_in_sales from percentage_chg

@@ -1,0 +1,54 @@
+2026-03-09 16:10:08 | INFO     | ##############################
+2026-03-09 16:10:08 | INFO     | ###### PIPELINE STARTED ######
+2026-03-09 16:10:08 | INFO     | ##############################
+2026-03-09 16:10:08 | INFO     | 
+2026-03-09 16:10:10 | INFO     | ###### Task [load] starting ######
+2026-03-09 16:10:10 | INFO     | The total number of records in the dataset: 100
+2026-03-09 16:10:10 | INFO     | The schema of dataset
+2026-03-09 16:10:10 | INFO     | Employee_ID : int64
+2026-03-09 16:10:10 | INFO     | Name : str
+2026-03-09 16:10:10 | INFO     | Age : Int64
+2026-03-09 16:10:10 | INFO     | Department : str
+2026-03-09 16:10:10 | INFO     | Salary : float64
+2026-03-09 16:10:10 | INFO     | Joining_Date : str
+2026-03-09 16:10:10 | INFO     | Resigned : bool
+2026-03-09 16:10:10 | INFO     | ###### Task [load] ending ######
+2026-03-09 16:10:10 | INFO     | 
+2026-03-09 16:10:12 | INFO     | ###### Task [cleaning] starting ######
+2026-03-09 16:10:12 | INFO     | Filling the blank age values with its median
+2026-03-09 16:10:12 | INFO     | Filling the blank salary values with its mean
+2026-03-09 16:10:12 | INFO     | Dropping the duplicates based on employee id
+2026-03-09 16:10:12 | INFO     | ###### Task [cleaning] ending ######
+2026-03-09 16:10:14 | INFO     | 
+2026-03-09 16:10:14 | INFO     | ###### Task [manipulation] starting ######
+2026-03-09 16:10:14 | INFO     | Number of records before filtering: 100
+2026-03-09 16:10:14 | INFO     | Number of records after filtering: 44
+2026-03-09 16:10:14 | INFO     | ###### Task [manipulation] ending ######
+2026-03-09 16:10:16 | INFO     | 
+2026-03-09 16:10:16 | INFO     | ###### Task [aggregation] starting ######
+2026-03-09 16:10:16 | INFO     | Department-level statisitics: Average Salary
+2026-03-09 16:10:16 | INFO     | Department
+Finance      58986.545455
+HR           60094.600000
+IT           59994.555556
+Marketing    62362.444444
+Name: Salary, dtype: float64
+2026-03-09 16:10:16 | INFO     | 
+Department-level statisitics: Median Age
+2026-03-09 16:10:16 | INFO     | Department
+Finance      45.0
+HR           43.0
+IT           46.0
+Marketing    45.0
+Name: Age, dtype: Float64
+2026-03-09 16:10:16 | INFO     | Incremented the salary of IT staff by 10 percent
+2026-03-09 16:10:16 | INFO     | ###### Task [aggregation] ending ######
+2026-03-09 16:10:18 | INFO     | 
+2026-03-09 16:10:18 | INFO     | ###### Task [Data transportation export] starting ######
+2026-03-09 16:10:18 | INFO     | Exported the data to json successfully
+2026-03-09 16:10:18 | INFO     | The record count is 44
+2026-03-09 16:10:18 | INFO     | ###### Task [Data transportation export] starting ######
+2026-03-09 16:10:18 | INFO     | 
+2026-03-09 16:10:18 | INFO     | ##############################
+2026-03-09 16:10:18 | INFO     | ###### PIPELINE COMPLETE ######
+2026-03-09 16:10:18 | INFO     | ##############################

@@ -1,0 +1,101 @@
+commodity_key	commodity	variety	grade	commodity_code
+0	Moath Dal	Moath (W)	FAQ	258
+1	Wheat	Sharbati	Non-FAQ	1
+2	Tomato	Other	FAQ	78
+3	Jowar(Sorghum)	Other	FAQ	5
+4	Cummin Seed(Jeera)	Other	Grade Range-3	42
+5	Chilly Capsicum	Other	FAQ	88
+6	Ajwan	Ajwan	Grade Range-1	137
+7	Raddish	Other	FAQ	161
+8	Amla(Nelli Kai)	Other	FAQ	355
+9	Brinjal	Other	FAQ	35
+10	Mint(Pudina)	Other	FAQ	360
+11	Potato	Chips	FAQ	24
+12	Mustard	Mustard	Non-FAQ	12
+13	Paddy(Common)	G. R. 11	Grade Range-2	2
+14	Corriander seed	Other	FAQ	108
+15	Pointed gourd(Parval)	Other	FAQ	303
+16	Potato	Desi	FAQ	24
+17	Mango(Raw-Ripe)	Other	FAQ	172
+18	Spinach	Other	FAQ	342
+19	Isabgul(Psyllium)	Other	Local	256
+20	Onion	Local	FAQ	23
+21	Kabuli Chana(Chickpeas-White)	Other	FAQ	362
+22	Mango (Raw-Ripe)	Other	FAQ	172
+23	Suva (Dill Seed)	Other	FAQ	255
+24	Wheat	Deshi	FAQ	1
+25	Sesamum(Sesame,Gingelly,Til)	Other	FAQ	11
+26	Yam(Ratalu)	Other	FAQ	297
+27	Yam (Ratalu)	Other	FAQ	297
+28	Snakeguard	Other	FAQ	156
+29	Bengal Gram(Gram)(Whole)	Desi (Whole)	Non-FAQ	6
+30	Paddy(Dhan)(Common)	I.R. 8	FAQ	2
+31	Surat Beans(Papadi)	Other	FAQ	300
+32	Kartali(Kantola)	Other	FAQ	305
+33	Papaya (Raw)	Other	FAQ	313
+34	Bitter gourd	Other	FAQ	81
+35	Guar Seed(Cluster Beans Seed)	Other	FAQ	413
+36	Suva(Dill Seed)	Suva (Dill Seed)	Local	255
+37	Mango	Other	Medium	20
+38	French Beans (Frasbean)	Other	FAQ	298
+39	Paddy(Common)	Other	Local	2
+40	Bajra(Pearl Millet/Cumbu)	Other	FAQ	28
+41	Mustard	Big 100 Kg	FAQ	12
+42	Papaya(Raw)	Other	FAQ	313
+43	Cotton	Other	Local	15
+44	Beetroot	Other	FAQ	157
+45	Bottle gourd	Other	FAQ	82
+46	Arhar Dal(Tur Dal)	Arhar Dal(Tur)	FAQ	260
+47	Onion	Nasik	FAQ	23
+48	Castor Seed	Other	FAQ	123
+49	Soanf	Soanf	FAQ	135
+50	Moath Dal	Moath (W)	FAQ	95
+51	Turnip	Other	FAQ	341
+52	Mustard	Other	FAQ	12
+53	Bhindi(Ladies Finger)	Other	FAQ	85
+54	Onion Green	Other	FAQ	358
+55	Peas Wet	Other	FAQ	174
+56	Tinda	Other	FAQ	349
+57	Cotton	Shanker 6 (B) 30mm FIne	Non-FAQ	15
+58	Paddy(Common)	Other	Grade Range-2	2
+59	Cluster beans	Other	FAQ	80
+60	Paddy(Dhan)(Common)	Paddy	FAQ	2
+61	Potato	Desi	Non-FAQ	24
+62	Isabgul (Psyllium)	Other	FAQ	256
+63	Black Gram(Urd Beans)(Whole)	Black Gram (Whole)	Grade Range-1	8
+64	Pumpkin	Other	FAQ	84
+65	Turmeric(raw)	Other	FAQ	309
+66	Rat Tail Radish (Mogari)	Other	FAQ	307
+67	Onion	Other	FAQ	23
+68	Black Gram(Urd Beans)(Whole)	Black Gram (Whole)	FAQ	8
+69	Paddy(Dhan)(Common)	Paddy	Non-FAQ	2
+70	Elephant Yam(Suran)/Amorphophallus	Other	FAQ	296
+71	Black Gram(Urd Beans)(Whole)	Black Gram (Whole)	Local	8
+72	Methi(Leaves)	Other	FAQ	46
+73	Turmeric (raw)	Other	FAQ	309
+74	Barley (Jau)	Other	FAQ	29
+75	Cotton	Other	FAQ	15
+76	Black Gram (Urd Beans)(Whole)	Black Gram (Whole)	FAQ	8
+77	Soanf	Soanf	Local	135
+78	Elephant Yam (Suran)	Other	FAQ	296
+79	Guar	Other	FAQ	75
+80	Potato	Other	FAQ	24
+81	Drumstick	Other	FAQ	168
+82	Cotton	Shanker 6 (B) 30mm FIne	FAQ	15
+83	Lemon	Other	FAQ	310
+84	Cucumbar(Kheera)	Other	FAQ	159
+85	Wheat	Lokwan Gujrat	Grade Range-2	1
+86	Ajwan	Ajwan	FAQ	137
+87	Sesamum(Sesame,Gingelly,Til)	Other	Non-FAQ	11
+88	Green Chilli	Other	FAQ	87
+89	Coriander(Leaves)	Coriander	Grade A	43
+90	French Beans(Frasbean)	Other	FAQ	298
+91	Sesamum(Sesame,Gingelly,Til)	Other	Local	11
+92	Bengal Gram(Gram)(Whole)	999	FAQ	6
+93	Wheat	Other	Grade Range-2	1
+94	Paddy(Common)	Other	Non-FAQ	2
+95	Elephant Yam(Suran)/Amorphophallus	Other	Grade A	296
+96	Mustard	Mustard	Local	12
+97	Banana - Green	Other	FAQ	90
+98	Rat Tail Radish(Mogari)	Other	FAQ	307
+99	Mango	Other	Large	20

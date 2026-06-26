@@ -1,0 +1,101 @@
+arrival_date	year	month	state	district	commodity	max_modal_price	min_modal_price	avg_modal_price	variety_count	price_spread	spread_pct	arbitrage_flag	date_commodity_key
+2020-01-01	2020	1	Gujarat	Ahmedabad	Tomato	1000	1000	1000	1	0	0	Low / single variety	2020-01-01_Tomato
+2020-01-01	2020	1	Gujarat	Ahmedabad	Castor Seed	4000	4000	4000	1	0	0	Low / single variety	2020-01-01_Castor Seed
+2020-01-01	2020	1	Gujarat	Ahmedabad	Wheat	2315	2315	2315	1	0	0	Low / single variety	2020-01-01_Wheat
+2020-01-01	2020	1	Gujarat	Ahmedabad	Lemon	1200	1200	1200	1	0	0	Low / single variety	2020-01-01_Lemon
+2020-01-01	2020	1	Gujarat	Ahmedabad	Capsicum	1950	1950	1950	1	0	0	Low / single variety	2020-01-01_Capsicum
+2020-01-01	2020	1	Gujarat	Ahmedabad	Paddy(Dhan)(Common)	1960	1960	1960	1	0	0	Low / single variety	2020-01-01_Paddy(Dhan)(Common)
+2020-01-01	2020	1	Gujarat	Ahmedabad	Yam (Ratalu)	3900	3900	3900	1	0	0	Low / single variety	2020-01-01_Yam (Ratalu)
+2020-01-01	2020	1	Gujarat	Ahmedabad	Drumstick	7500	7500	7500	1	0	0	Low / single variety	2020-01-01_Drumstick
+2020-01-01	2020	1	Gujarat	Ahmedabad	Cummin Seed(Jeera)	14262	14262	14262	1	0	0	Low / single variety	2020-01-01_Cummin Seed(Jeera)
+2020-01-02	2020	1	Gujarat	Ahmedabad	Cummin Seed(Jeera)	14415	14300	14357.5	2	115	0.8	Low / single variety	2020-01-02_Cummin Seed(Jeera)
+2020-01-02	2020	1	Gujarat	Ahmedabad	Guar Seed(Cluster Beans Seed)	3700	3700	3700	1	0	0	Low / single variety	2020-01-02_Guar Seed(Cluster Beans Seed)
+2020-01-02	2020	1	Gujarat	Ahmedabad	Capsicum	1850	1850	1850	1	0	0	Low / single variety	2020-01-02_Capsicum
+2020-01-02	2020	1	Gujarat	Ahmedabad	Drumstick	7250	7250	7250	1	0	0	Low / single variety	2020-01-02_Drumstick
+2020-01-02	2020	1	Gujarat	Ahmedabad	Lemon	1200	1200	1200	1	0	0	Low / single variety	2020-01-02_Lemon
+2020-01-02	2020	1	Gujarat	Ahmedabad	Yam (Ratalu)	3850	3850	3850	1	0	0	Low / single variety	2020-01-02_Yam (Ratalu)
+2020-01-02	2020	1	Gujarat	Ahmedabad	Wheat	2290	2290	2290	1	0	0	Low / single variety	2020-01-02_Wheat
+2020-01-02	2020	1	Gujarat	Ahmedabad	Tomato	1400	1400	1400	1	0	0	Low / single variety	2020-01-02_Tomato
+2020-01-02	2020	1	Gujarat	Ahmedabad	Paddy(Dhan)(Common)	1965	1965	1965	1	0	0	Low / single variety	2020-01-02_Paddy(Dhan)(Common)
+2020-01-02	2020	1	Gujarat	Ahmedabad	Onion	4900	4900	4900	1	0	0	Low / single variety	2020-01-02_Onion
+2020-01-03	2020	1	Gujarat	Ahmedabad	Cummin Seed(Jeera)	14280	14250	14265	2	30	0.21	Low / single variety	2020-01-03_Cummin Seed(Jeera)
+2020-01-03	2020	1	Gujarat	Ahmedabad	Onion	4400	4400	4400	1	0	0	Low / single variety	2020-01-03_Onion
+2020-01-03	2020	1	Gujarat	Ahmedabad	Brinjal	1150	1150	1150	1	0	0	Low / single variety	2020-01-03_Brinjal
+2020-01-03	2020	1	Gujarat	Ahmedabad	Green Chilli	1900	1900	1900	1	0	0	Low / single variety	2020-01-03_Green Chilli
+2020-01-03	2020	1	Gujarat	Ahmedabad	Cauliflower	1250	1250	1250	1	0	0	Low / single variety	2020-01-03_Cauliflower
+2020-01-03	2020	1	Gujarat	Ahmedabad	Guar	5500	5500	5500	1	0	0	Low / single variety	2020-01-03_Guar
+2020-01-03	2020	1	Gujarat	Ahmedabad	Potato	1350	1350	1350	1	0	0	Low / single variety	2020-01-03_Potato
+2020-01-03	2020	1	Gujarat	Ahmedabad	Tomato	1750	1750	1750	1	0	0	Low / single variety	2020-01-03_Tomato
+2020-01-03	2020	1	Gujarat	Ahmedabad	Drumstick	6100	6100	6100	1	0	0	Low / single variety	2020-01-03_Drumstick
+2020-01-03	2020	1	Gujarat	Ahmedabad	Cotton	5330	5330	5330	1	0	0	Low / single variety	2020-01-03_Cotton
+2020-01-03	2020	1	Gujarat	Ahmedabad	Bitter gourd	2300	2300	2300	1	0	0	Low / single variety	2020-01-03_Bitter gourd
+2020-01-03	2020	1	Gujarat	Ahmedabad	Capsicum	2100	2100	2100	1	0	0	Low / single variety	2020-01-03_Capsicum
+2020-01-03	2020	1	Gujarat	Ahmedabad	Surat Beans (Papadi)	5000	5000	5000	1	0	0	Low / single variety	2020-01-03_Surat Beans (Papadi)
+2020-01-03	2020	1	Gujarat	Ahmedabad	Castor Seed	4120	4120	4120	1	0	0	Low / single variety	2020-01-03_Castor Seed
+2020-01-03	2020	1	Gujarat	Ahmedabad	Bottle gourd	750	750	750	1	0	0	Low / single variety	2020-01-03_Bottle gourd
+2020-01-03	2020	1	Gujarat	Ahmedabad	Wheat	2350	2350	2350	1	0	0	Low / single variety	2020-01-03_Wheat
+2020-01-03	2020	1	Gujarat	Ahmedabad	Paddy(Dhan)(Common)	1772	1772	1772	1	0	0	Low / single variety	2020-01-03_Paddy(Dhan)(Common)
+2020-01-03	2020	1	Gujarat	Ahmedabad	Lemon	1250	1250	1250	1	0	0	Low / single variety	2020-01-03_Lemon
+2020-01-03	2020	1	Gujarat	Ahmedabad	Pointed gourd (Parval)	2800	2800	2800	1	0	0	Low / single variety	2020-01-03_Pointed gourd (Parval)
+2020-01-04	2020	1	Gujarat	Ahmedabad	Mint(Pudina)	1150	1150	1150	1	0	0	Low / single variety	2020-01-04_Mint(Pudina)
+2020-01-04	2020	1	Gujarat	Ahmedabad	Potato	1425	1425	1425	1	0	0	Low / single variety	2020-01-04_Potato
+2020-01-04	2020	1	Gujarat	Ahmedabad	Spinach	700	700	700	1	0	0	Low / single variety	2020-01-04_Spinach
+2020-01-04	2020	1	Gujarat	Ahmedabad	Coriander(Leaves)	750	750	750	1	0	0	Low / single variety	2020-01-04_Coriander(Leaves)
+2020-01-04	2020	1	Gujarat	Ahmedabad	Onion	4400	4400	4400	1	0	0	Low / single variety	2020-01-04_Onion
+2020-01-04	2020	1	Gujarat	Ahmedabad	Cotton	5380	5380	5380	1	0	0	Low / single variety	2020-01-04_Cotton
+2020-01-04	2020	1	Gujarat	Ahmedabad	Methi(Leaves)	500	500	500	1	0	0	Low / single variety	2020-01-04_Methi(Leaves)
+2020-01-05	2020	1	Gujarat	Ahmedabad	Cummin Seed(Jeera)	14000	14000	14000	1	0	0	Low / single variety	2020-01-05_Cummin Seed(Jeera)
+2020-01-05	2020	1	Gujarat	Ahmedabad	Castor Seed	4100	4100	4100	1	0	0	Low / single variety	2020-01-05_Castor Seed
+2020-01-06	2020	1	Gujarat	Ahmedabad	Lemon	1600	1600	1600	1	0	0	Low / single variety	2020-01-06_Lemon
+2020-01-06	2020	1	Gujarat	Ahmedabad	Beetroot	850	850	850	1	0	0	Low / single variety	2020-01-06_Beetroot
+2020-01-06	2020	1	Gujarat	Ahmedabad	Onion	4650	4650	4650	1	0	0	Low / single variety	2020-01-06_Onion
+2020-01-06	2020	1	Gujarat	Ahmedabad	Bitter gourd	2100	2100	2100	1	0	0	Low / single variety	2020-01-06_Bitter gourd
+2020-01-06	2020	1	Gujarat	Ahmedabad	Colacasia	3700	3700	3700	1	0	0	Low / single variety	2020-01-06_Colacasia
+2020-01-06	2020	1	Gujarat	Ahmedabad	Capsicum	2400	2400	2400	1	0	0	Low / single variety	2020-01-06_Capsicum
+2020-01-06	2020	1	Gujarat	Ahmedabad	Raddish	550	550	550	1	0	0	Low / single variety	2020-01-06_Raddish
+2020-01-06	2020	1	Gujarat	Ahmedabad	Drumstick	7000	7000	7000	1	0	0	Low / single variety	2020-01-06_Drumstick
+2020-01-06	2020	1	Gujarat	Ahmedabad	Mint(Pudina)	1800	1800	1800	1	0	0	Low / single variety	2020-01-06_Mint(Pudina)
+2020-01-06	2020	1	Gujarat	Ahmedabad	Onion Green	1400	1400	1400	1	0	0	Low / single variety	2020-01-06_Onion Green
+2020-01-06	2020	1	Gujarat	Ahmedabad	Green Chilli	2000	2000	2000	1	0	0	Low / single variety	2020-01-06_Green Chilli
+2020-01-06	2020	1	Gujarat	Ahmedabad	Coriander(Leaves)	600	600	600	1	0	0	Low / single variety	2020-01-06_Coriander(Leaves)
+2020-01-06	2020	1	Gujarat	Ahmedabad	Guar Seed(Cluster Beans Seed)	3725	3725	3725	1	0	0	Low / single variety	2020-01-06_Guar Seed(Cluster Beans Seed)
+2020-01-06	2020	1	Gujarat	Ahmedabad	Peas Wet	2700	2700	2700	1	0	0	Low / single variety	2020-01-06_Peas Wet
+2020-01-06	2020	1	Gujarat	Ahmedabad	Cabbage	450	450	450	1	0	0	Low / single variety	2020-01-06_Cabbage
+2020-01-06	2020	1	Gujarat	Ahmedabad	Bottle gourd	900	900	900	1	0	0	Low / single variety	2020-01-06_Bottle gourd
+2020-01-06	2020	1	Gujarat	Ahmedabad	Pumpkin	900	900	900	1	0	0	Low / single variety	2020-01-06_Pumpkin
+2020-01-06	2020	1	Gujarat	Ahmedabad	Brinjal	1050	1050	1050	1	0	0	Low / single variety	2020-01-06_Brinjal
+2020-01-06	2020	1	Gujarat	Ahmedabad	Cauliflower	1350	1350	1350	1	0	0	Low / single variety	2020-01-06_Cauliflower
+2020-01-06	2020	1	Gujarat	Ahmedabad	Methi(Leaves)	500	500	500	1	0	0	Low / single variety	2020-01-06_Methi(Leaves)
+2020-01-06	2020	1	Gujarat	Ahmedabad	Potato	1750	1750	1750	1	0	0	Low / single variety	2020-01-06_Potato
+2020-01-06	2020	1	Gujarat	Ahmedabad	Cummin Seed(Jeera)	14250	14250	14250	1	0	0	Low / single variety	2020-01-06_Cummin Seed(Jeera)
+2020-01-06	2020	1	Gujarat	Ahmedabad	Amla(Nelli Kai)	1800	1800	1800	1	0	0	Low / single variety	2020-01-06_Amla(Nelli Kai)
+2020-01-06	2020	1	Gujarat	Ahmedabad	Yam (Ratalu)	4100	4100	4100	1	0	0	Low / single variety	2020-01-06_Yam (Ratalu)
+2020-01-06	2020	1	Gujarat	Ahmedabad	Bhindi(Ladies Finger)	3750	3750	3750	1	0	0	Low / single variety	2020-01-06_Bhindi(Ladies Finger)
+2020-01-06	2020	1	Gujarat	Ahmedabad	Elephant Yam (Suran)	1500	1500	1500	1	0	0	Low / single variety	2020-01-06_Elephant Yam (Suran)
+2020-01-06	2020	1	Gujarat	Ahmedabad	Guar	5500	5500	5500	1	0	0	Low / single variety	2020-01-06_Guar
+2020-01-06	2020	1	Gujarat	Ahmedabad	Spinach	650	650	650	1	0	0	Low / single variety	2020-01-06_Spinach
+2020-01-06	2020	1	Gujarat	Ahmedabad	Surat Beans (Papadi)	7000	7000	7000	1	0	0	Low / single variety	2020-01-06_Surat Beans (Papadi)
+2020-01-06	2020	1	Gujarat	Ahmedabad	Turmeric (raw)	2100	2100	2100	1	0	0	Low / single variety	2020-01-06_Turmeric (raw)
+2020-01-06	2020	1	Gujarat	Ahmedabad	Sweet Potato	2100	2100	2100	1	0	0	Low / single variety	2020-01-06_Sweet Potato
+2020-01-06	2020	1	Gujarat	Ahmedabad	Carrot	2250	2250	2250	1	0	0	Low / single variety	2020-01-06_Carrot
+2020-01-06	2020	1	Gujarat	Ahmedabad	French Beans (Frasbean)	3500	3500	3500	1	0	0	Low / single variety	2020-01-06_French Beans (Frasbean)
+2020-01-06	2020	1	Gujarat	Ahmedabad	Pointed gourd (Parval)	4850	4850	4850	1	0	0	Low / single variety	2020-01-06_Pointed gourd (Parval)
+2020-01-06	2020	1	Gujarat	Ahmedabad	Ginger(Green)	6000	6000	6000	1	0	0	Low / single variety	2020-01-06_Ginger(Green)
+2020-01-06	2020	1	Gujarat	Ahmedabad	Cotton	5360	5360	5360	1	0	0	Low / single variety	2020-01-06_Cotton
+2020-01-06	2020	1	Gujarat	Ahmedabad	Tomato	1900	1900	1900	1	0	0	Low / single variety	2020-01-06_Tomato
+2020-01-06	2020	1	Gujarat	Ahmedabad	Castor Seed	4135	4135	4135	1	0	0	Low / single variety	2020-01-06_Castor Seed
+2020-01-07	2020	1	Gujarat	Ahmedabad	Methi(Leaves)	550	550	550	1	0	0	Low / single variety	2020-01-07_Methi(Leaves)
+2020-01-07	2020	1	Gujarat	Ahmedabad	Cummin Seed(Jeera)	14475	14475	14475	1	0	0	Low / single variety	2020-01-07_Cummin Seed(Jeera)
+2020-01-07	2020	1	Gujarat	Ahmedabad	Cauliflower	1200	1200	1200	1	0	0	Low / single variety	2020-01-07_Cauliflower
+2020-01-07	2020	1	Gujarat	Ahmedabad	Raddish	600	600	600	1	0	0	Low / single variety	2020-01-07_Raddish
+2020-01-07	2020	1	Gujarat	Ahmedabad	Bhindi(Ladies Finger)	3500	3500	3500	1	0	0	Low / single variety	2020-01-07_Bhindi(Ladies Finger)
+2020-01-07	2020	1	Gujarat	Ahmedabad	Peas Wet	2600	2600	2600	1	0	0	Low / single variety	2020-01-07_Peas Wet
+2020-01-07	2020	1	Gujarat	Ahmedabad	Drumstick	6500	6500	6500	1	0	0	Low / single variety	2020-01-07_Drumstick
+2020-01-07	2020	1	Gujarat	Ahmedabad	Onion	4900	4900	4900	1	0	0	Low / single variety	2020-01-07_Onion
+2020-01-07	2020	1	Gujarat	Ahmedabad	Surat Beans (Papadi)	7000	7000	7000	1	0	0	Low / single variety	2020-01-07_Surat Beans (Papadi)
+2020-01-07	2020	1	Gujarat	Ahmedabad	French Beans (Frasbean)	3100	3100	3100	1	0	0	Low / single variety	2020-01-07_French Beans (Frasbean)
+2020-01-07	2020	1	Gujarat	Ahmedabad	Brinjal	1050	1050	1050	1	0	0	Low / single variety	2020-01-07_Brinjal
+2020-01-07	2020	1	Gujarat	Ahmedabad	Bottle gourd	850	850	850	1	0	0	Low / single variety	2020-01-07_Bottle gourd
+2020-01-07	2020	1	Gujarat	Ahmedabad	Castor Seed	4125	4125	4125	1	0	0	Low / single variety	2020-01-07_Castor Seed
+2020-01-07	2020	1	Gujarat	Ahmedabad	Tomato	1200	1200	1200	1	0	0	Low / single variety	2020-01-07_Tomato
+2020-01-07	2020	1	Gujarat	Ahmedabad	Guar Seed(Cluster Beans Seed)	3790	3790	3790	1	0	0	Low / single variety	2020-01-07_Guar Seed(Cluster Beans Seed)

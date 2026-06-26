@@ -1,0 +1,11 @@
+YardBlockID,Terminal,Zone,CapacityTEU
+Y01,Terminal B,Export,1995
+Y02,Terminal B,Export,1249
+Y03,Terminal A,Export,986
+Y04,Terminal A,Import,1113
+Y05,Terminal A,Export,930
+Y06,Terminal B,Export,1758
+Y07,Terminal B,Import,1034
+Y08,Terminal B,Export,1028
+Y09,Terminal B,Export,1123
+Y10,Terminal B,Import,1339

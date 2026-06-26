@@ -1,0 +1,9 @@
+ShippingLineID,ShippingLineName,Alliance
+SL001,Maersk,2M
+SL002,MSC,2M
+SL003,CMA CGM,Ocean Alliance
+SL004,COSCO,Ocean Alliance
+SL005,Hapag-Lloyd,THE Alliance
+SL006,ONE,THE Alliance
+SL007,Evergreen,Ocean Alliance
+SL008,Yang Ming,THE Alliance

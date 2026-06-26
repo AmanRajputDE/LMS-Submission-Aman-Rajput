@@ -1,0 +1,5 @@
+GateID,Terminal,GateType
+G01,Terminal A,Truck Entry
+G02,Terminal A,Truck Exit
+G03,Terminal B,Truck Entry
+G04,Terminal B,Truck Exit

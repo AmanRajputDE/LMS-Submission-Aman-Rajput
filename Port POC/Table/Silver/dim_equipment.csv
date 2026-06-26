@@ -1,0 +1,21 @@
+EquipmentID,EquipmentType,Terminal
+E001,Forklift,Terminal A
+E002,RTG Crane,Terminal A
+E003,Forklift,Terminal B
+E004,Forklift,Terminal A
+E005,RTG Crane,Terminal B
+E006,Reach Stacker,Terminal A
+E007,RTG Crane,Terminal B
+E008,Forklift,Terminal A
+E009,Forklift,Terminal A
+E010,Reach Stacker,Terminal B
+E011,Reach Stacker,Terminal A
+E012,Forklift,Terminal B
+E013,Forklift,Terminal B
+E014,Terminal Tractor,Terminal A
+E015,Forklift,Terminal B
+E016,Terminal Tractor,Terminal B
+E017,Terminal Tractor,Terminal B
+E018,Reach Stacker,Terminal A
+E019,Forklift,Terminal A
+E020,RTG Crane,Terminal A

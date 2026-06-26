@@ -1,7 +1,7 @@
 # India Mandi Price Intelligence Platform
 
 > An end-to-end data engineering project built on **Microsoft Fabric** and **Power BI** that transforms 15+ years of raw government agricultural market data into actionable price intelligence for farmers, policymakers, and traders.
-[Presentation]([https://data.gov.in](https://amanrajputde.github.io/Mandi-POC-website/))
+[Presentation](https://amanrajputde.github.io/Mandi-POC-website/)
 
 ---
 

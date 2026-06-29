@@ -59,53 +59,13 @@ The solution is divided into two independent architectures.
 
 ## Historical Analytics
 
-```text
-Azure SQL Database
-        │
-        ▼
-Azure Data Factory
-        │
-        ▼
-Azure Data Lake Storage Gen2
-        │
-        ▼
-Fabric Bronze Lakehouse
-        │
-        ▼
-Fabric Silver Lakehouse
-        │
-        ▼
-Fabric Gold Lakehouse
-        │
-        ▼
-Fabric Warehouse
-        │
-        ▼
-Power BI Historical Dashboard
-```
+[![Historical Architecture](<Historical Pipeline Architecture.jpg>)]
 
 ---
 
 ## Live Operations
 
-```text
-Azure Function
-        │
-        ▼
-Azure Event Hub
-        │
-        ▼
-Fabric Eventstream
-        │
-        ▼
-Bronze Streaming Tables
-        │
-        ▼
-Silver Streaming Tables
-        │
-        ▼
-Power BI Live Dashboard
-```
+![Streaming Pipeline Architecture](<Streaming Pipeline Architecture.png>)
 
 ---
 

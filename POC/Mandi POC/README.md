@@ -1,6 +1,6 @@
 # India Mandi Price Intelligence Platform
 
-> An end-to-end data engineering project built on **Microsoft Fabric** and **Power BI** that transforms 15+ years of raw government agricultural market data into actionable price intelligence for farmers, policymakers, and traders.
+> An end-to-end data engineering project built on **Microsoft Fabric** and **Power BI** that transforms 5+ years of raw government agricultural market data into actionable price intelligence for farmers, policymakers, and traders.
 
 ---
 
@@ -37,7 +37,7 @@ This platform ingests daily mandi price data from [data.gov.in](https://data.gov
 | Transformation | PySpark Notebooks (Apache Spark on Fabric) |
 | Semantic layer | Fabric Semantic Model (DirectLake mode) |
 | Visualisation | Power BI (DAX measures, conditional formatting, slicers) |
-| Data source | [data.gov.in Agmarknet API](https://data.gov.in/resource/current-daily-price-various-commodities-various-markets-mandi) |
+| Data source | [data.gov.in Agmarknet API](https://www.data.gov.in/resource/variety-wise-daily-market-prices-data-commodity) |
 
 ---
 
@@ -78,7 +78,7 @@ This platform ingests daily mandi price data from [data.gov.in](https://data.gov
 
 ### Bronze — raw landing zone
 
-Raw files exactly as received. Never modified. Partitioned by date. Replayable if anything downstream breaks.
+Raw files exactly as received. Never modified. Replayable if anything downstream breaks.
 
 ```
 Files/

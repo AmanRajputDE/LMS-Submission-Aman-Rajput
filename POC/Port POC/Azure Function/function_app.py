@@ -9,7 +9,7 @@ app = func.FunctionApp()
 EVENT_HUB_NAME = "portops-events"
 
 producer = EventHubProducerClient.from_connection_string(
-    conn_str="Endpoint=sb://portops-eventhub-ns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=Pp3QLNV7SUHSoNfoJbRwxvruLXU2bmJrU+AEhEhCoiE=",
+    conn_str="Endpoint=sb://portops-eventhub-ns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xxxxxx",
     eventhub_name=EVENT_HUB_NAME
 )
 
